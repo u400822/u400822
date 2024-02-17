@@ -1,7 +1,7 @@
 name: Huy Pro
 
 on:
-	workflow_dispatch
+	workflow_dispatch:
 
 jobs:
 	auto_commit_and_push:
@@ -18,7 +18,7 @@ jobs:
 				run: |
 					while true; do
 						for ((i=0; i<=1; i++)); do
-							echo $i > README.md
+							echo $i > HUY
 							git add .
 							git commit -m "By HuyPro"
 							git push
