@@ -1,0 +1,27 @@
+name: Huy Pro
+
+on:
+	workflow_dispatch
+
+jobs:
+	auto_commit_and_push:
+		runs-on: ubuntu-latest
+		steps:
+			- name: Checkout
+				uses: actions/checkout@v2
+			- name: Set up
+				run: |
+					git config --global user.name "Quang Huy"
+					git config --global user.email "mqh07112008@gmail.com"
+
+			- name: Huy
+				run: |
+					while true; do
+						for ((i=0; i<=1; i++)); do
+							echo $i > README.md
+							git add .
+							git commit -m "By HuyPro"
+							git push
+						done
+					done
+     
