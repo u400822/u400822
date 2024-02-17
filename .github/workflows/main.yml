@@ -1,10 +1,10 @@
-name: Huy Pro
+name: HuyPro
 
 on:
-	workflow_dispatch:
+	workflow_dispatch
 
 jobs:
-	huy:
+	auto_commit_and_push:
 		runs-on: ubuntu-latest
 		steps:
 			- name: Checkout
@@ -18,10 +18,9 @@ jobs:
 				run: |
 					while true; do
 						for ((i=0; i<=1; i++)); do
-							echo $i > HUY
+							echo $i > README.md
 							git add .
 							git commit -m "By HuyPro"
 							git push
 						done
 					done
-     
