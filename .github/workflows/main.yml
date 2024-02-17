@@ -2,7 +2,7 @@ name: HuyPro
 on:
 	workflow_dispatch:
 jobs:
-	huy:
+	build:
 		runs-on: ubuntu-latest
 		steps:
 			- name: Checkout
