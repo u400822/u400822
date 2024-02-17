@@ -1,8 +1,6 @@
 name: HuyPro
-
 on:
 	workflow_dispatch:
-
 jobs:
 	huy:
 		runs-on: ubuntu-latest
@@ -13,7 +11,6 @@ jobs:
 				run: |
 					git config --global user.name "Quang Huy"
 					git config --global user.email "mqh07112008@gmail.com"
-
 			- name: Huy
 				run: |
 					while true; do
