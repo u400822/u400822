@@ -4,7 +4,7 @@ on:
 	workflow_dispatch:
 
 jobs:
-	auto_commit_and_push:
+	huy:
 		runs-on: ubuntu-latest
 		steps:
 			- name: Checkout
